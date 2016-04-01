@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="1" preserve-order="true">
+  <test name="Test"> 
+     <classes>
+      <class name="Testcase.APIsaveOrUpdateUnitTest"/>
+      <class name="Testcase.APIqueryUnitByIdTest"/>
+      <class name="Testcase.APIdelUnitByIdTest"/>
+      <class name="Testcase.APIqueryUnitPagerTest"/>
+
+      <class name="Testcase.APIsaveCatTest"/>
+      <class name="Testcase.APIupdateCatNameTest"/>
+      <class name="Testcase.APIdelCatTest"/>
+      <class name="Testcase.APIqueryCatListTest"/>
+      <class name="Testcase.APIqueryCatByIdTest"/>
+
+      <class name="Testcase.APIbarCreatorTest"/>
+      <class name="Testcase.APIqueryGoodsLibraryTest"/>
+
+      <class name="Testcase.APIsaveGoodsTest"/>
+      <class name="Testcase.APIupdateGoodsTest"/>
+      <class name="Testcase.APIqueryGoodsByIdTest"/>
+      <class name="Testcase.APIdelGoodsTest"/>
+      <class name="Testcase.APIqueryGoodsPagerTest"/>
+
+      <class name="Testcase.APIupdateIntegralRuleTest"/>
+      <class name="Testcase.APIqueryIntegralRuleTest"/>
+      <class name="Testcase.APIaddOrModifyVipTypeTest"/>
+      <class name="Testcase.APIdelVipTypeTest"/>
+      <class name="Testcase.APIqueryVipTypeListTest"/>
+
+      <class name="Testcase.APIsaveVipStoreRuleDetailTest"/>
+      <class name="Testcase.APIdelVipStoreRuleDetailTest"/>
+      <class name="Testcase.APIqueryVipStoreRuleTest"/>
+      <class name="Testcase.APIupdateVipStoreRuleDetailTest"/>
+      <class name="Testcase.APIstartOrCloseVipStoreRuleTest"/>
+
+      <class name="Testcase.APIqryVipListTest"/>
+
+      <class name="Testcase.APIqueryEmpPagerTest"/>
+      <class name="Testcase.APIqueryRolePagerTest"/>
+      <class name="Testcase.APIsaveEmpTest"/>
+      <class name="Testcase.APIupdateEmpTest"/>
+      <class name="Testcase.APIdelEmpTest"/>
+      <class name="Testcase.APInextEmpCodeTest"/>
+      <class name="Testcase.APIresetPasswordForLocalTest"/>
+
+      <class name="Testcase.APIpaymentListTest"/>
+      <class name="Testcase.APIfindPaymentByIdTest"/>
+      <class name="Testcase.APIdeletePaymentsTest"/>
+      <class name="Testcase.APIisEnablePaymentTest"/>
+      <class name="Testcase.APIscoreOrNotTest"/>
+      <class name="Testcase.APIsavePaymentTest"/>
+
+    </classes>
+    <listeners>
+      <!-- put the listener class here -->
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+    <!--<listener class-name = "Utils.RetryListener" />-->
+    <!--<listener class-name = "Utils.TestngListener" />-->
+    </listeners>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

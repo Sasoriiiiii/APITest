@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Suite]" parallel="classes">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="Testcase.APIsavePaymentTest">
+        <methods>
+          <include name="savePaymentTest"/>
+        </methods>
+      </class> <!-- Testcase.APIsavePaymentTest -->
+      <class name="Testcase.APIupdateGoodsTest">
+        <methods>
+          <include name="updateGoodsTest"/>
+        </methods>
+      </class> <!-- Testcase.APIupdateGoodsTest -->
+      <class name="Testcase.APIsaveGoodsTest">
+        <methods>
+          <include name="saveGoodsTest"/>
+        </methods>
+      </class> <!-- Testcase.APIsaveGoodsTest -->
+      <class name="Testcase.APIsaveEmpTest">
+        <methods>
+          <include name="saveEmpTest"/>
+        </methods>
+      </class> <!-- Testcase.APIsaveEmpTest -->
+      <class name="Testcase.APIupdateEmpTest">
+        <methods>
+          <include name="updateEmpTest"/>
+        </methods>
+      </class> <!-- Testcase.APIupdateEmpTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
